@@ -1,0 +1,148 @@
+body{
+    margin: 0px;
+}
+.bg_img_div{
+    background: url("background.jpg")  no-repeat center ;
+    background-size: cover;
+    height: 625px;
+    width: 1366px;
+}
+.bg_img_content{
+    height: 50px;
+}
+.bg_img_content a{
+    text-decoration: none;
+    color: black;
+}
+.bg_img_content a:visited{
+    color:black ;
+}
+
+.bg_img_content img{
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    float: left;
+}
+.team_name{
+    float: left;
+    font-size: 25px;
+    font-family: times new roman;
+    background: -webkit-linear-gradient(rgb(117, 112, 112), rgb(20, 20, 20));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: translateY(-7px);
+}
+.quote{
+    margin-left: 28%;
+    margin-top: 160px;
+}
+.quote h2{
+    color:rgb(59, 59, 59);
+    text-shadow:1px 1px 4px rgb(212, 168, 233);
+    font-family:rockwell ;
+    font-size: 30px;
+    padding: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-bottom: 5px;
+}
+.quote h1{
+    color:rgb(59, 59, 59);
+    text-shadow:1px 1px 4px rgb(255, 255, 255);
+    font-family: ALGERIAN;
+    font-size: 42px;
+    margin-left: 3%;
+    padding: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-bottom: 5px;
+}
+
+.test_btn{
+    text-shadow: none;
+    border: 1px solid black;
+    background: rgb(164, 238, 90);
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 15px;
+}
+.test_btn:hover{
+    cursor: pointer;
+    border-width: 2px;
+}
+.arrow{
+    font-size: 45px;
+    font-weight: 600;
+    color: black;
+    text-shadow: 1px 1px 2px whitesmoke ;
+    
+}
+.arrow:hover{
+    cursor: pointer;
+}
+@keyframes arrow {
+    0%{ttransform: translateY(-5px);}
+    100%{transform: translateY(5px);}
+}
+.arrow_div{
+    margin-left:50%;   
+    bottom: 15px ;
+    position: absolute;
+    animation: arrow 1s linear infinite;
+}
+
+.covid_stats_map_div{
+    width: 500px;
+    float: left;
+    margin-left: 10px;
+}
+
+.covid_stats_div{
+    position: absolute;
+    float: left;
+    width: 770px;
+    height: 1000px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 535px;
+    /* margin-left: auto;
+    margin-right: auto;  */
+    overflow: auto;
+}
+
+.covid_stats_div::-webkit-scrollbar-track {
+    border: 1px solid rgb(95, 95, 95);
+    border-radius: 20px;
+    padding: 2px 0;
+    background-color: #ffffff;
+  }
+  
+  .covid_stats_div::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .covid_stats_div::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #999898;
+    border: 1px solid rgb(61, 61, 61);
+  }
+
+.test_btn_1{
+    display:none;
+    text-shadow: none;
+    border: 1px solid black;
+    background: rgb(164, 238, 90);
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 15px;
+    bottom: 15px;
+    right: 15px;
+    position: fixed;
+}
+.test_btn_1:hover{
+    cursor: pointer;
+    border-width: 2px;
+}
+  

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link rel="icon" type="image/x-icon" href="logo.png" >
+    <title>Covid risk calculator</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='form.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <h1>Covid risk calculator</h1>
+    <div class="form">
+    <div class="border">
+    <div class="main-container">
+        <form >
+        <div class="form1">
+            <div class="input-icons">
+                <i class="fa fa-user-o" aria-hidden="true"></i>
+                <input 
+                type = "text"
+                class="text-input"
+                placeholder="Enter your name "
+                />
+            </div><br/>
+            <div class="input-icons">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <input 
+                type ="text"
+                class="text-input"
+                placeholder="Enter your location"
+                />
+            </div><br/>
+            <div class="input-icons">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <input 
+                type ="text"
+                class = "text-input"
+                placeholder="Phone no "
+                />
+            </div><br/>
+        </div>
+        <div class="form2">
+            <h3>Mark the symptoms you have</h3>
+            <label class="main">Cold
+                <input 
+                type="checkbox"
+                id="cold">
+                <span class="checkmark"></span>
+            </label></br> 
+            <label class="main">Fever
+                <input 
+                type="checkbox"
+                id="fever">
+                <span class="checkmark"></span>
+            </label></br>
+            <label class="main">Running nose
+                <input 
+                type="checkbox"
+                id="runningNose">
+                <span class="checkmark"></span>
+            </label></br> 
+            <label class="main">Head ache
+                <input 
+                type="checkbox"
+                id="headAche">
+                <span class="checkmark"></span>
+            </label></br>
+            <label class="main">Diarrhoea
+                <input 
+                type="checkbox"
+                id="diarrhoea">
+                <span class="checkmark"></span>
+            </label></br> 
+        </div>
+        <div class="form3">
+            <label class="main">Breathing problem
+                <input 
+                type="checkbox"
+                id="breatheProblem">
+                <span class="checkmark"></span>
+            </label></br>
+            <label class="main">Throat pain
+                <input 
+                type="checkbox"
+                id="throatPain">
+                <span class="checkmark"></span>
+            </label></br> 
+            <label class="main">Tiredness
+                <input 
+                type="checkbox"
+                id="tiredness">
+                <span class="checkmark"></span>
+            </label></br> 
+            <label class="main">Tasteless
+                <input 
+                type="checkbox"
+                id="tasteless">
+                <span class="checkmark"></span>
+            </label></br> 
+            <label class="main">Smellless
+                <input 
+                type="checkbox"
+                id="smellless">
+                <span class="checkmark"></span>
+            </label></br>
+        </div> 
+        <div class="form5">   
+            <label class="main">Any other
+                <input 
+                type="checkbox"
+                id="anyOther"
+                onclick="checkBox()">
+                <span class="checkmark" ></span>
+            </label>
+        
+            <input 
+            type="text"
+            id="input"
+            placeholder="Enter Here"
+            class="checkdisplay"
+            ></br>
+        </div>    
+        
+
+        <div class="form4">    
+            <div class="input-icons">
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+                <input 
+                type = "text"
+                class="text-input"
+                placeholder="Symptom duration in days "
+                />
+            </div><br/>
+            <div class="input-icons">
+                <i class="fa fa-medkit" aria-hidden="true"></i>
+                <input 
+                type = "text"
+                class="text-input"
+                placeholder="No of dose "
+                />
+            </div><br/>
+            <h3>Are you already attacked by COVID-19?</h3>
+            <label class="container">yes
+                <input type="radio" checked="checked" name="radio" id="yes">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">no
+                <input type="radio" checked="checked" name="radio" id="no">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+        
+        <button id="button" onclick="checked()">Let's check</button>
+        
+        </form>
+        
+    </div>
+    </div>
+    </div>
+    <p id="result"></p>
+    
+</body>
+
+<script src='form.js'></script>
+
+</html>
